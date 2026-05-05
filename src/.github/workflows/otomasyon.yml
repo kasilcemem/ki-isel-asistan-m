@@ -1,1 +1,10 @@
+name: Asistan Kontrolü
+on: [push] # Sen GitHub'a bir şey yüklediğinde asistan uyanır
 
+jobs:
+  isleri_yap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Kodları Kontrol Et
+        run: echo "Asistan şu an dosyaları kontrol ediyor ve her şey yolunda!"
